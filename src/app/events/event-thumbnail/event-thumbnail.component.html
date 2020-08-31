@@ -1,0 +1,14 @@
+
+  
+  <div class="card mb-6" [routerLink]="['/events', event.id]" >
+    <h3 class="card-header">{{event.name}}</h3>
+    <div class="card-body">
+      <h5 class="card-title">{{event.location.city}}</h5>
+      <h6 class="card-subtitle text-muted">{{event.location.country}}</h6>
+    </div>
+    <img style="height: 200px; width: 100%; display: block;" src={{event.imageUrl}} alt="Card image">
+    
+    <div class="card-footer text-muted">
+      {{event.time}} | {{event.date}}
+    </div>
+  </div>

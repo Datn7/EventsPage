@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card mb-3">
+                <h3 class="card-header">{{event.name}}</h3>
+                <div class="card-body">
+                  <h5 class="card-title">თარიღი: {{event.date}}</h5>
+                  <h6 class="card-subtitle text-muted">დაწყების დრო: {{event.time}}</h6>
+                </div>
+                <img style="height: 400px; width: 100%; display: block;" src={{event.imageUrl}} alt="Card image">
+                
+              
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">მისამართი: {{event.location.address}}</li>
+                    <li class="list-group-item">ქალაქი: {{event.location.city}}</li>
+                    <li class="list-group-item">ქვეყანა: {{event.location.country}}</li>
+                  </ul>
+            </div>
+           </div>
+    </div>
+  
+</div>

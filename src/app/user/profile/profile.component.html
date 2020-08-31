@@ -1,0 +1,14 @@
+<form [formGroup]="profileForm" (ngSubmit)="saveProfile(profileForm.value)">
+    <div class="form-group">
+        <label for="firstName">სახელი</label>
+        <input formControlName="firstName" id="firstName" type="text" class="form-control" placeholder="სახელი">
+    </div>
+
+    <div class="form-group">
+        <label for="firstName">გვარი</label>
+        <input formControlName="lastName" id="lastName" type="text" class="form-control" placeholder="გვარი">
+    </div>
+
+    <button type="submit" class="btn btn-primary">შენახვა</button>
+    <button type="button" class="btn btn-danger" (click)="cancel()">უკან</button>
+</form>

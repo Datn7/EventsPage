@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" novalidate>
+                <img class="mb-4" src="" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal">შეიყვანეთ მონაცემები</h1>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="ელექტრონული ფოსტა" autofocus="" ([ngModel])="userName" name="userName" required>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="პაროლი" ([ngModel])="password" name="passowrd" required>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> დამახსოვრება
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="loginForm.invalid">შესვლა</button>
+                
+                <button class="btn btn-lg btn-danger btn-block" type="submit" (click)="cancel()">უკან</button>
+              </form>
+        </div>
+    </div>
+</div>

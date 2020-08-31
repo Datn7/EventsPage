@@ -1,0 +1,3 @@
+<div class="row">
+    <app-event-thumbnail *ngFor="let event of events" [event]="event" class="col-md-4" (click)="handleThumbClick(event.name)"></app-event-thumbnail>
+</div>
